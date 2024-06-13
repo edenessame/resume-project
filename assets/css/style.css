@@ -46,6 +46,25 @@ h4 {
     display: inline-block;
 }
 
+/* by setting display to table we specify its child columns as table cells of equal height */
+.row-table {
+    display: table;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    /* bootstrap may add default float remove it to make sure theres no breaks */
+    float: none;
+}
+
+.section-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
 
 /*--------------------------------------------Heading*/
 
