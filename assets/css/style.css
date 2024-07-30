@@ -7,19 +7,31 @@
 }
 
 .bg-color-three-reasons {
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .bg-color-personal-info {
     background-color: #f4f4f4;
 }
 
-.bg-color-work-history{
+.bg-color-skills {
+    background-color: #ffffff;
+}
+
+.bg-color-work-history {
     background-color: #9b59b6;
 }
 
 .bg-color-contact {
-    background-color: #fff;
+    background-color: #ffffff;
+}
+
+.bg-color-conferences {
+    background-color: #f4f4f4;
+}
+
+.bg-color-groups {
+    background-color: #ffffff;
 }
 
 .ui-menu-color-home {
@@ -35,10 +47,30 @@
 }
 
 .ui-menu-color-download {
-    background-color: #525252;
+    background-color: #d9a81d;
 }
 
-/* ----------------------------------------Special paddings/margins/text */
+
+.ui-menu-color-github {
+    background-color: #1c4a6c;
+}
+
+.ui-menu-color-interests {
+    background-color: #e74c3c;
+}
+
+
+
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    background-color: #525252;
+    color: #555555;
+}
+
+
+/*--------------------------------------------Special Paddings/Margins/Text*/
 
 h1,
 h2,
@@ -65,13 +97,6 @@ h4 {
 /* by setting display to table we specify its child columns as table cells of equal height */
 .row-table {
     display: table;
-}
-
-.section-column {
-    display: table-cell;
-    padding: 0 30px 30px;
-    /* bootstrap may add default float remove it to make sure theres no breaks */
-    float: none;
 }
 
 .history-heading,
@@ -109,7 +134,7 @@ header {
     font-weight: 100;
     font-size: 46px;
     margin-top: 50px;
-    color: #fff;
+    color: #ffffff;
 }
 
 .title {
@@ -118,7 +143,7 @@ header {
     font-size: 28px;
     margin-top: 20px;
     margin-bottom: 90px;
-    color: #fff;
+    color: #ffffff;
 }
 
 /* use google dev tools to see where extra padding/ margin is, then copy the element copy remove it */
@@ -138,7 +163,6 @@ items of the list- #nav li and give them a size */
 }
 
 #nav li {
-    font-size: 14px;
     padding: 0;
 }
 
@@ -152,9 +176,10 @@ items of the list- #nav li and give them a size */
     width: 100%;
     text-decoration: none;
     /* removes underline from links*/
-    color: #fff;
+    color: #ffffff;
     height: 120px;
 }
+
 
 .menuitem a i {
     padding-top: 22px;
@@ -175,6 +200,7 @@ items of the list- #nav li and give them a size */
     letter-spacing: 2px;
 }
 
+
 /*--------------------------------------------Hover.css*/
 
 /* change colour of the hover function */
@@ -183,7 +209,8 @@ items of the list- #nav li and give them a size */
     height: 120px;
 }
 
-/* ----------------------------------------Footer */
+
+/*--------------------------------------------Footer*/
 
 footer {
     background-color: #525252;
@@ -192,20 +219,20 @@ footer {
     margin: 0;
 }
 
-.cv-pdf i {
-    font-size: 18px;
+footer .cv-pdf i {
     color: #fafafa;
     text-align: center;
+    font-size: 18px;
     padding-left: 5px;
+}
+
+footer .cv-pdf i:hover {
+    color: #e84610;
     /* gentle transition on hover */
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
-}
-
-.cv-pdf i:hover {
-    color: #e84610;
 }
 
 .social-links {
@@ -234,10 +261,10 @@ footer {
 }
 
 #footer-details {
-    padding: 20px;
+    margin: 20px;
 }
 
-/* ----------------------------------------Three Reasons */
+/*--------------------------------------------Three Reasons*/
 
 .three-reasons-icon {
     font-size: 26px;
@@ -248,7 +275,7 @@ footer {
     margin-bottom: 15px;
 }
 
-/* ----------------------------------------Personal Info */
+/*--------------------------------------------Personal Info*/
 
 .personal-info-item {
     margin-bottom: 20px;
@@ -261,9 +288,6 @@ footer {
 .personal-info-item .key,
 .personal-info-item .value {
     padding-right: 8px;
-    /* a div is a block level element by default, which means it starts and ends with a new line and occupys all
-    the horizontal space, an inline-block allows 2 divs side by side */
-    display: inline-block;
 }
 
 .personal-info-item .key p,
@@ -272,6 +296,9 @@ footer {
 }
 
 .personal-info-item .key {
+    /* a div is a block level element by default, which means it starts and ends with a new line and occupys all
+    the horizontal space, an inline-block allows 2 divs side by side */
+    display: inline-block;
     /* coresponds with width:60% on the value when they are side by side*/
     width: 30%;
     margin-right: 21px;
@@ -285,19 +312,19 @@ footer {
 }
 
 .personal-info-item .value {
+    display: inline-block;
     /* so its relative to its predecessor */
     position: relative;
     /* coresponds with width:30% on the key when they are side by side*/
     width: 60%;
 }
 
-/* ----------------------------------------Skills */
+/*--------------------------------------------Skills*/
 
 .progress {
     /* you make a parent element relative to give it absolute children and left:0 for example, to position it left */
     position: relative;
     height: 25px;
-    margin-bottom: 4px;
 }
 
 .progress-type {
@@ -310,16 +337,13 @@ footer {
     background-color: rgba(25, 25, 25, 0.2);
 }
 
+
 .progress-section {
     margin: 40px 20px;
 }
 
-/* ----------------------------------------Work History */
 
-.history-heading {
-    color: #fafafa;
-    margin-bottom: 50px;
-}
+/*--------------------------------------------Work History*/
 
 .timeline-item {
     padding: 4em 2em 0em 2em;
@@ -337,7 +361,7 @@ footer {
 can only use the content property with :before or :after pseudo element
 this sets the content that will be seen before or after the class in question
 so this will display the dates */
-.timeline-item:before {
+.timeline-item::before {
     content: attr(data-dates);
     position: absolute;
     left: 2.5em;
@@ -345,13 +369,13 @@ so this will display the dates */
     display: block;
     font-family: "Exo", sans-serif;
     font-weight: 500;
-    font-size: 0.8em;
+    font-size: .8em;
     padding: 0;
     margin: 0;
 }
 
 /* similar to above, this will create a disk on the timeline */
-.timeline-item:after {
+.timeline-item::after {
     width: 12px;
     height: 12px;
     display: block;
@@ -363,11 +387,16 @@ so this will display the dates */
     background: #fafafa;
 }
 
+.history-heading {
+    color: #fafafa;
+    margin-bottom: 50px;
+}
+
 .history-items {
     margin-bottom: 30px;
 }
 
-/* ----------------------------------------Contact Form */
+/*--------------------------------------------Contact*/
 
 .contact-heading {
     font-family: "Exo", sans-serif;
@@ -375,6 +404,7 @@ so this will display the dates */
     margin-top: 25px;
     margin-bottom: 20px;
 }
+
 
 .center-form {
     padding-top: 10px;
@@ -386,14 +416,25 @@ so this will display the dates */
 button[type="submit"] {
     margin-top: 15px;
     margin-bottom: 20px;
-    color: #fafafa;
     background-color: #e84610;
+    color: #fafafa;
 }
 
-/* ----------------------------------------Media Queries
-so the form is smaller on desktop screensize */
+/*--------------------------------------------Map*/
+div#map {
+    min-height: 360px;
+}
+
+/*--------------------------------------------Media Queries*/
 
 @media(min-width: 992px) {
+    .section-column {
+        padding: 0 30px 30px;
+        float: none;
+        display: table-cell;
+    }
+
+    /* so the form is smaller on desktop screensize */
     .center-form {
         padding-top: 30px;
         min-height: 240px;
